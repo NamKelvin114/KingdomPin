@@ -1,0 +1,41 @@
+
+loppy_train.png
+size: 524,100
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+loppy_train1
+  rotate: true
+  xy: 306, 2
+  size: 96, 99
+  orig: 96, 99
+  offset: 0, 0
+  index: -1
+loppy_train2
+  rotate: false
+  xy: 407, 53
+  size: 65, 45
+  orig: 65, 45
+  offset: 0, 0
+  index: -1
+loppy_train3
+  rotate: false
+  xy: 407, 6
+  size: 65, 45
+  orig: 65, 45
+  offset: 0, 0
+  index: -1
+loppy_train4
+  rotate: true
+  xy: 474, 33
+  size: 65, 45
+  orig: 65, 45
+  offset: 0, 0
+  index: -1
+loppy_train_box
+  rotate: false
+  xy: 2, 12
+  size: 302, 86
+  orig: 302, 86
+  offset: 0, 0
+  index: -1

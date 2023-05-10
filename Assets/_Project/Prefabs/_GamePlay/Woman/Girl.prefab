@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8064329661052208677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5209836250177761817}
+  - component: {fileID: 8987682650035262719}
+  - component: {fileID: 5331181584178414232}
+  - component: {fileID: 584898348825421508}
+  - component: {fileID: 1691966508564910317}
+  - component: {fileID: 4005926195133440112}
+  - component: {fileID: 4378990395030453050}
+  - component: {fileID: 4054376671746415697}
+  m_Layer: 9
+  m_Name: Girl
+  m_TagString: Rescue
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5209836250177761817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2.74, y: 9.62, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5920021624978097454}
+  - {fileID: 1099927233926964803}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!54 &8987682650035262719
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!136 &5331181584178414232
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.19190562
+  m_Height: 0.389912
+  m_Direction: 1
+  m_Center: {x: -0.0030504465, y: 0.21947414, z: -0}
+--- !u!114 &584898348825421508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6d49a2d0307ea49ba445cf16d22e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RaycastPosi: {fileID: 1099927233926964803}
+  RaycastTargetDistance: 10
+  RaycastGroundDistance: 1.2
+  doneDie: {fileID: 0}
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 1280
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 1088
+  Target: {fileID: 0}
+  CurrentState: 1
+  AnimancerComponent: {fileID: 1691966508564910317}
+  LootAnim: {fileID: 0}
+  IdleAnim: {fileID: 7400000, guid: 3a2a3efcd4d83a14c8c1051339b67bbd, type: 2}
+  RunAnim: {fileID: 0}
+  RescueAnim: {fileID: 0}
+  GetRescueAnim: {fileID: 7400000, guid: b9f30e2285ca1db488cdd59310b2a226, type: 2}
+  JumpAnim: {fileID: 0}
+  DanceWin: {fileID: 7400000, guid: 48038db1b10a3d744b2328ce1b112bd7, type: 2}
+  DanceWin2: {fileID: 0}
+  AttackAnim: {fileID: 0}
+  AttackWeaponAnim2: {fileID: 0}
+  DieAnim: {fileID: 7400000, guid: b08cafcf18b77ba4dab4166f4034e814, type: 2}
+  IdleWeaponAnim: {fileID: 0}
+  AttackWeaponAnim: {fileID: 0}
+  PickupWeapon: {fileID: 0}
+  DieSound: {fileID: 0}
+  IsStartRun: 0
+  Range: 1.3
+  BoxCollider: {fileID: 0}
+  CharacterRb: {fileID: 0}
+  IsGround: 0
+  IsWinGame: 0
+  IsLostGame: 0
+  IsWeapon: 0
+  IsDead: 0
+  isDoneRotate: 0
+  GetRescueSound: {fileID: 11400000, guid: 83ae65460bd99ca4e94bb993073859cc, type: 2}
+  DoneGetResCue: {fileID: 11400000, guid: 7feb750403397fa47a90dc171871c334, type: 2}
+--- !u!114 &1691966508564910317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad50f81b1d25c441943c37a89ba23f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Animator: {fileID: 3168435119924011089}
+  _ActionOnDisable: 0
+--- !u!114 &4005926195133440112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9317afed14d43d24588de5ab6ee37257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 7feb750403397fa47a90dc171871c334, type: 2}
+  SetEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 584898348825421508}
+        m_TargetAssemblyTypeName: Lady, Assembly-CSharp
+        m_MethodName: WinAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4378990395030453050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9317afed14d43d24588de5ab6ee37257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameEvent: {fileID: 11400000, guid: 5fa9e71c3c3bd3a4594489573373915c, type: 2}
+  SetEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 584898348825421508}
+        m_TargetAssemblyTypeName: Lady, Assembly-CSharp
+        m_MethodName: GetRescue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &4054376671746415697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064329661052208677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5629542, y: 3.5012507, z: 1}
+  m_Center: {x: -0.01638925, y: 1.7635314, z: -0}
+--- !u!1 &8767746995151642931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099927233926964803}
+  m_Layer: 9
+  m_Name: Raycastposi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1099927233926964803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767746995151642931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5209836250177761817}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6170667269435040453
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5209836250177761817}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7853026647658721218, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2f9e06f24b1fe54cae9e5b8862fb84e, type: 2}
+    - target: {fileID: -1066482357222864773, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1066482357222864773, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2f9e06f24b1fe54cae9e5b8862fb84e, type: 2}
+    - target: {fileID: -1066482357222864773, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2f9e06f24b1fe54cae9e5b8862fb84e, type: 2}
+    - target: {fileID: 919132149155446097, guid: 88d96d1a7b061864794e6e176aeffc0b,
+        type: 3}
+      propertyPath: m_Name
+      value: Women
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88d96d1a7b061864794e6e176aeffc0b, type: 3}
+--- !u!4 &5920021624978097454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 88d96d1a7b061864794e6e176aeffc0b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6170667269435040453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6441261143465074580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 88d96d1a7b061864794e6e176aeffc0b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6170667269435040453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3168435119924011089
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441261143465074580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72a9a2defdfdfba41aa13ac21f11077c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
